@@ -1,0 +1,17 @@
+@use '@angular/material' as mat;
+
+$angular-todo-primary: mat.define-palette(mat.$indigo-palette);
+$angular-todo-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+$angular-todo-warn: mat.define-palette(mat.$red-palette);
+
+$angular-todo-theme: mat.define-light-theme((
+  color: (
+    primary: $angular-todo-primary,
+    accent: $angular-todo-accent,
+    warn: $angular-todo-warn,
+  )
+));
+
+@include mat.all-component-themes($angular-todo-theme);
+
