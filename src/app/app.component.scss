@@ -1,0 +1,56 @@
+.page {
+  height: 100vh;
+  background-color: #e4e4e4;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  height: 80vh;
+  width: 80vw;
+  background-color: #ffffff;
+  padding: 54px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  place-items: center;
+}
+
+.red {
+  color: red;
+}
+
+.blue {
+  color: #3e7bd9;
+}
+
+.check-task {
+  color: #4e4e4e;
+}
+
+.page-header, .task-item {
+  justify-content: space-between;
+}
+
+.page-header {
+  margin-bottom: 28px;
+}
+
+.page-heading {
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.item {
+  border-radius: 8px;
+}
+
+.task-item:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 10px 20px, rgba(0, 0, 0, 0.1) 0 6px 6px;
+}
