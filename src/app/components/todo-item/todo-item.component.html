@@ -1,0 +1,16 @@
+<div class="flex-items-center item todo-item p-3">
+  <div class="flex-items-center gap-4">
+    <ng-container *ngIf="todo.isChecked; else uncheckedIcon">
+      <mat-icon (click)="toggleCheck(todo.id)" class="check-todo"
+        >check_circle</mat-icon
+      >
+    </ng-container>
+    <ng-template #uncheckedIcon>
+      <mat-icon (click)="toggleCheck(todo.id)">radio_button_unchecked</mat-icon>
+    </ng-template>
+    <p [className]="'todo-name ' + (todo.isChecked ? 'checked' : '')">
+      {{ todo.task }}
+    </p>
+  </div>
+  <mat-icon class="red" (click)="deleteTask(todo.id)">highlight_off</mat-icon>
+</div>
