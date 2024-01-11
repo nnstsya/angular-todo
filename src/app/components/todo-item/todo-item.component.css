@@ -1,0 +1,19 @@
+.todo-name {
+  overflow-wrap: break-word;
+}
+
+.todo-item {
+  justify-content: space-between;
+}
+.todo-item:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 10px 20px, rgba(0, 0, 0, 0.1) 0 6px 6px;
+}
+
+.checked {
+  text-decoration: line-through;
+}
+
+.check-todo {
+  color: #4e4e4e;
+}

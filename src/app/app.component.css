@@ -1,20 +1,5 @@
-@mixin page {
-  height: 100vh;
-  width: 100vw;
-  justify-content: center;
-  align-items: center;
-}
-
-@mixin pop-up {
-  background-color: white;
-  border-radius: 14px;
-  box-shadow: rgba(0, 0, 0, 0.05) 0 6px 24px 0, rgba(0, 0, 0, 0.08) 0 0 0 1px;
-}
-
-.more-button {
-  &:hover {
-    cursor: pointer;
-  }
+.more-button:hover {
+  cursor: pointer;
 }
 
 .blur-page-container {
@@ -25,14 +10,19 @@
 }
 
 .blur-page {
-  @include page;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
   backdrop-filter: blur(4px);
   position: relative;
 }
 
 .todo-input-pop-up {
   flex-direction: column;
-  @include pop-up;
+  background-color: white;
+  border-radius: 14px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0 6px 24px 0, rgba(0, 0, 0, 0.08) 0 0 0 1px;
   padding: 54px;
 }
 
@@ -41,12 +31,17 @@
 }
 
 .page {
-  @include page;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
   background-color: #e4e4e4;
 }
 
 .filter-popup {
-  @include pop-up;
+  background-color: white;
+  border-radius: 14px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0 6px 24px 0, rgba(0, 0, 0, 0.08) 0 0 0 1px;
   padding: 24px;
 }
 
@@ -95,26 +90,26 @@
 
 .filter-options {
   font-size: 12px;
-  p:hover {
-    cursor: pointer;
-  }
+}
+.filter-options p:hover {
+  cursor: pointer;
 }
 
 .todos-container {
   padding: 14px;
   flex: 1;
   overflow-y: scroll;
-  &::-webkit-scrollbar {
-    visibility: hidden;
-  }
+}
+.todos-container::-webkit-scrollbar {
+  visibility: hidden;
 }
 
 .item {
   border-radius: 8px;
 }
 
-.add-item-icon {
-  &:hover {
-    cursor: pointer;
-  }
+.add-item-icon:hover {
+  cursor: pointer;
 }
+
+/*# sourceMappingURL=app.component.css.map */
