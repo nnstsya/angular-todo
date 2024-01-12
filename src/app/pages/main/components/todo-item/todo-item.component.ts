@@ -15,11 +15,11 @@ export class TodoItemComponent {
 
   inputValue: string = '';
 
-  toggleCheck(id: number): void {
+  toggleCheck(): void {
     this.toggleCheckEvent.emit(this.todo.id);
   }
 
-  deleteTask(id: number): void {
+  deleteTask(): void {
     this.removeTodoEvent.emit(this.todo.id);
   }
 }

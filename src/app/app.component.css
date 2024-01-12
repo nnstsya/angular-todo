@@ -1,0 +1,115 @@
+.more-button:hover {
+  cursor: pointer;
+}
+
+.blur-page-container {
+  height: 100vh;
+  width: 100vw;
+  z-index: 3;
+  position: absolute;
+}
+
+.blur-page {
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(4px);
+  position: relative;
+}
+
+.todo-input-pop-up {
+  flex-direction: column;
+  background-color: white;
+  border-radius: 14px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0 6px 24px 0, rgba(0, 0, 0, 0.08) 0 0 0 1px;
+  padding: 54px;
+}
+
+.pop-up-heading {
+  font-size: 30px;
+}
+
+.page {
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  background-color: #e4e4e4;
+}
+
+.filter-popup {
+  background-color: white;
+  border-radius: 14px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0 6px 24px 0, rgba(0, 0, 0, 0.08) 0 0 0 1px;
+  padding: 24px;
+}
+
+.content {
+  flex-direction: column;
+  height: 80vh;
+  width: 80vw;
+  background-color: #ffffff;
+  padding: 54px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-items-center {
+  display: flex;
+  place-items: center;
+}
+
+.flex-content-center {
+  display: flex;
+  place-content: center;
+}
+
+.red {
+  color: red;
+}
+
+.blue {
+  color: #3e7bd9;
+}
+
+.page-header {
+  height: 70px;
+}
+
+.page-header {
+  justify-content: space-between;
+}
+
+.page-heading {
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.filter-options {
+  font-size: 12px;
+}
+.filter-options p:hover {
+  cursor: pointer;
+}
+
+.todos-container {
+  padding: 14px;
+  flex: 1;
+  overflow-y: scroll;
+}
+.todos-container::-webkit-scrollbar {
+  visibility: hidden;
+}
+
+.item {
+  border-radius: 8px;
+}
+
+.add-item-icon:hover {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=app.component.css.map */
