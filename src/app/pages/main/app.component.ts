@@ -1,23 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
-import { MatIconModule } from '@angular/material/icon';
-import { FormsModule } from '@angular/forms';
-import { TodoModel } from '../models/todo.model';
-import { TodoItemComponent } from './components/todo-item/todo-item.component';
-import { AppService } from '../services/app.service';
+import { TodoModel } from '../../../models/todo.model';
+import { AppService } from '../../../services/app.service';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  providers: [AppService],
-  imports: [
-    CommonModule,
-    RouterOutlet,
-    MatIconModule,
-    FormsModule,
-    TodoItemComponent,
-  ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
